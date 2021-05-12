@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        style="@style/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/insert_button"
+                    style="@style/text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/insert_mode" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/take_out_button"
+                    style="@style/text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_out_mode" />
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/text_content_2"
+                android:id="@+id/container_view"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:inputType="textMultiLine"
+                android:maxLines="12"
+                android:hint="@string/container_hint"
+                android:autofillHints="" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/text_content_2"
+                android:id="@+id/secret_view"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="textCapSentences"
+                android:hint="@string/secret_hint"
+                android:autofillHints="" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/filled_container_view"
+                style="@style/text_title"
+                android:text="@string/filled_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/secret_message_view"
+                style="@style/text_title"
+                android:text="@string/secret_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:singleLine="false"
+                android:maxLines="7"
+                android:lines="7"
+                style="@style/text_content_2"
+                android:id="@+id/result_view"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.85"
+                android:inputType="textMultiLine"
+                android:hint="@string/result_field"
+                android:autofillHints="" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        style="@style/card_view"
+        android:layout_height="60dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/copy_button"
+                style="@style/element"
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="@string/copy"
+                android:background="#f59d71"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/execute_button"
+                style="@style/element"
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="@string/execute"
+                android:background="@color/colorAccent"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/share_button"
+                style="@style/element"
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="@string/share"
+                android:background="#e6ca4c"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

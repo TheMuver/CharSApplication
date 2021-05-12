@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/card_view" >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/text_title"
+            android:text="@string/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/text_content_2"
+            android:id="@+id/name_view"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/input_text_width"
+            android:inputType="textCapSentences"
+            android:hint="@string/name_hint"
+            android:autofillHints="" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/text_title"
+            android:text="@string/profile_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/text_content_2"
+            android:id="@+id/key_view"
+            android:layout_height="wrap_content"
+            android:maxLength="8"
+            android:layout_width="@dimen/input_text_width"
+            android:inputType="number"
+            android:hint="@string/key_hint"
+            android:autofillHints="" />
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/text_title"
+            android:text="@string/profile_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                style="@style/text_content_2"
+                android:id="@+id/standard_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/standard_mode"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="201dp" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                style="@style/text_content_2"
+                android:id="@+id/max_capacity_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/max_capacity_mode"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="229dp" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                style="@style/text_content_2"
+                android:id="@+id/only_insert_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/only_insert_mode" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                style="@style/text_content_2"
+                android:id="@+id/only_replace_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/only_replace_mode" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                style="@style/text_content_2"
+                android:id="@+id/delete_button"
+                android:text="@string/delete_profile"
+                android:background="@color/colorDeleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="5dp" />
+
+            <Button
+                style="@style/text_content_2"
+                android:id="@+id/save_button"
+                android:text="@string/save_profile"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="5dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

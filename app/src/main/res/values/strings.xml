@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CharS</string>
+
+    <!-- Exceptions -->
+    <string name="too_small_container">Слишком маленький контейнер.</string>
+    <string name="invalid_check_sum">Неверная контрольная сумма.</string>
+    <string name="invalid_check_sum_info">Для отключения проверки контрольной суммы используйте режим OnlyInsert.</string>
+    <string name="invalid_operation">Ошибка алгоритма шифрования.</string>
+    <string name="server_unavailable">Сервер недоступен. Повторите попытку позже.</string>
+    <string name="not_stated_settings_profile">Не выбран профиль работы</string>
+
+    <!-- RecyclerView profile item-->
+    <string name="profile_name">Название</string>
+    <string name="profile_key">Ключ</string>
+    <string name="profile_type">Режим работы</string>
+
+    <!-- Warning -->
+    <string name="warning_title">Подтверждение</string>
+    <string name="delete_warning_text">Вы действительно хотите удалить этот профиль?</string>
+
+    <!-- New profile button -->
+    <string name="add_profile_title">Новый профиль</string>
+    <string name="add_profile_text">Создать новый профиль настроек</string>
+
+    <!-- Edit profile fragment -->
+    <string name="name_hint">Название профиля</string>
+    <string name="key_hint">Ключ шифрования (8 цифр)</string>
+
+    <string name="standard_mode">Стандартный</string>
+    <string name="max_capacity_mode">Максимальная вместимость</string>
+    <string name="only_insert_mode">Только алгоритм вставки</string>
+    <string name="only_replace_mode">Только алгоритм замены</string>
+
+    <string name="save_profile">Сохранить профиль</string>
+    <string name="delete_profile">Удалить профиль</string>
+    
+    <string name="empty_name">Введите название профиля.</string>
+    <string name="too_small_key">Ключ должен состоять из 8 цифр.</string>
+    <string name="not_definite_type">Выберете режим работы.</string>
+
+    <!-- Encryption fragment -->
+    <string name="insert_mode">Сокрытие</string>
+    <string name="take_out_mode">Извлечение</string>
+
+    <string name="container_hint">Введите текст-контейнер</string>
+    <string name="secret_hint">Введите секрет</string>
+
+    <string name="secret_message">Секретное сообщение</string>
+    <string name="filled_container">Заполненный контейнер</string>
+    <string name="result_field">Результат работы будет здесь</string>
+    
+    <string name="execute">Выполнить</string>
+    <string name="share">Отправить</string>
+    <string name="copy">Копировать</string>
+    <string name="copy_successful">Скопировано!</string>
+
+    <string name="empty_result">Пустое поле результата. Выполните операцию перед копированием.</string>
+    <string name="not_stated_operation_type">Выберете режим работы.</string>
+    <string name="empty_container">Введите контейнер.</string>
+    <string name="empty_secret">Введите секретное сообщение.</string>
+</resources>
